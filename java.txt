@@ -1,0 +1,8 @@
+Object-Oriented Programming (OOP): Java is a pure object-oriented language, meaning everything is an object. This includes classes, interfaces, and even primitive data types.
+Platform Independence: Java's "Write Once, Run Anywhere" (WORA) principle allows compiled Java code to run on any platform with a compatible Java Virtual Machine (JVM).
+Automatic Garbage Collection: Java's garbage collector automatically manages memory allocation and deallocation, reducing the risk of memory leaks.
+Strong Typing: Java is a strongly typed language, requiring explicit declaration of variable types, which helps prevent errors and improves code readability.
+Exception Handling: Java provides a robust exception handling mechanism to manage errors and prevent program crashes.
+Multithreading: Java supports concurrent programming through multithreading, allowing multiple tasks to execute simultaneously.
+Generics: Generics provide type safety and flexibility by allowing you to create classes and methods that can work with different data types.
+Collections Framework: Java provides a rich collections framework with various data structures like ArrayList, LinkedList, HashMap, HashSet, etc., for efficient data management.

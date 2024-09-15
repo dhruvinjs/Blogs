@@ -1,0 +1,6 @@
+Security: Java has built-in security features to protect against malicious code, such as bytecode verification and the SecurityManager.
+Interoperability: Java can interact with code written in other languages using the Java Native Interface (JNI).
+Reflection: Reflection allows you to inspect and manipulate classes, methods, and fields at runtime, providing dynamic behavior.
+Annotations: Annotations provide metadata about code elements, which can be used for various purposes like dependency injection, code generation, and documentation.
+Functional Programming: Java 8 introduced functional programming features like lambda expressions, streams, and method references, enhancing code conciseness and readability.
+Modules: Java 9 introduced modules, a mechanism for organizing code into encapsulated units, improving modularity and encapsulation.

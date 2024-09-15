@@ -1,0 +1,61 @@
+Understanding the java basics
+Hello Coders so today i will be talking about how object is created 
+and where it gets Stored in the memory
+
+In Java, objects are fundamental components of Object-Oriented Programming (OOP). Here’s a brief overview:
+
+What is an Object?
+An object in Java is an instance of a class. 
+It represents a real-world entity or concept, combining data (attributes) and behaviors (methods) into a single unit. 
+For example, a Car class might have attributes like color and model, and methods like drive() and brake().
+We can create a object of class by using the new keyword
+Example
+NewExample obj=new NewExample();  
+here in the above code snippet 
+I have created a object with the identifier obj of class NewExample class
+
+
+NOW the real question is where does the memory of this object is getting stored
+So first lets take a code snippet 
+public class NewExample1 {  
+
+    public static void main(String[] args) {  
+        NewExample1 obj=new NewExample1();  
+   		int n;
+    }  
+      
+}  
+Now as you know in the memory section the local objects are in stack section 
+So in the above code we can see that i have created a object of class and simple var
+of in datatype 
+So here the real question is
+Where Is the memory of the variable and object getting stored?
+So first for variable it is getting stored in stack area 
+So if now the var is accessed outside the main method it will give
+error because its scope is getting destroyed after the main method is over
+
+Lets Come to the Object memory allocation
+Here is the tricky part
+When i create a obj with the help of new keyword 
+the actual object is getting created in the HEAP memory section
+the obj which is the identifier or name of an object is reference which is in the stack area
+which points to actual object in heap 
+Now even if i say that if the main method is over the teh reference to the object is destroyed
+And the actual object which is in heap section will never get destroyed
+
+Note
+As you know about the data member of class 
+So in heap only non static member are stored 
+and in the data area the static members gets stored
+
+
+
+
+
+
+Here's an interesting fact told by my Professor Dinesh Banswal
+He told us that Java never gives us an  object address even if we
+convert the address using toString() method it will gives us the reference address not the actual address
+
+
+
