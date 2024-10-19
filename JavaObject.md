@@ -72,6 +72,7 @@ and in the data area, the static members are stored
 
 Here is the diagrammatic representation of the above point
 
+![WhatsApp Image 2024-09-06 at 1 56 41 PM](https://github.com/user-attachments/assets/19c95faf-dab4-4ac0-bd61-89fff02f4148)
 
 
 Here's an interesting fact told by my Professor Dinesh Banswal
