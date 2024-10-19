@@ -104,7 +104,7 @@ obj.display();
 
 
 Keyword or datatypes
-PRimitives
+Primitives
 Int=Can be used to store number data 
 can't store Decimal value
 Example
@@ -118,7 +118,6 @@ float f=10f; //the  f suffix indicates that it is float value
 
 Boolean
 Can be used to store the TRUE or FALSE Value
-
 boolean bool = true;
 
 Char 
@@ -127,7 +126,14 @@ char c = 'A';
 Note =compiler will give error if you store multiple error
 char a="abc";
 
-
+double
+Used for storing decimal numbers with higher precision than float
+double provides higher precision than float, making it suitable for most decimal number calculations.
+example:
+double radius = 5.0;
+double area = Math.PI * radius * radius;
+System.out.println("Area of the circle: " + area);
+Be aware of potential rounding errors when working with floating-point numbers.
 
 
 
