@@ -3,7 +3,7 @@ Hello coders In this blog I will be explaining about some keyword in java
 Final keyword
 The name itself suggests its meaning in Java.
 By using "Final" Keyword we are making the value final or constant 
-IT can be used anywhere means we can use this keyword for decalaring var,class,function
+It can be used anywhere means we can use this keyword for decalaring var,class,function
 It can stop method or overriding, Inheritance, value changing of variable
 example of final variable
 Example:
