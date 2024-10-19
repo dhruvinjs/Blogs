@@ -1,0 +1,108 @@
+Hello coders!
+In this blog I will be explaining Method overloading, overriding , Typecasting and Autoboxing Unboxing
+First  of all we will be understanding the method overloading
+Method overloading            				Method overriding 
+It is a concept where we have 2 methods 	     | Methods should be in base and derived class 
+with same name sequence of parameters is             |	Methods signature / prototype:
+different methods 				     |	Same name in both base and derived class.
+                                                 	Exactly same parameter.	
+Return type does not matter                             Return type should be same and compatible.
+ 	
+
+						
+Example if method overloading
+void sum(int x,y){
+return x+y;
+}	
+
+int sum(float x,y){
+return x+y;
+}	
+
+class Animal {
+void makeSound() {
+System.out.println("Generic animal sound");
+    }
+	}											
+class Dog extends Animal {
+    @Override
+    void makeSound() {
+        System.out.println("Woof!");   
+
+    }
+}	
+public class   
+ Main {
+    public static void main(String[] args) {
+        Animal animal = new Dog(); // Reference of Animal type, but object of Dog type
+        animal.makeSound(); // Output: Woof!
+    }
+}
+
+The Animal class has a makeSound() method that prints a generic sound.
+Cat subclasses override the makeSound() method to provide their specific implementations.
+When you construct a Dog object and use makeSound() on it, the Dog class's implementation is performed, illustrating runtime polymorphism.
+Method overriding is a useful Java method that enables you to write more flexible and reusable code. 
+It is required for creating polymorphism and modifying the behavior of inherited methods in your applications.
+
+Type casting and Autoboxing Unboxing 
+Type casting generally means when you convert one data type into another data type 
+Now there are certain rules or standard approach that should be followed when you type casting 
+First rule 
+Same Type of data 
+Example when you want to type cast both data type should be of same type or compatible type
+converting a float into a double data type 
+float pi=3.14f;
+double d=pi;
+
+Now float data is implicitly converted into the double data and no problem like memory leak is going to occur
+
+But now comes the second rule which is both the destination should not have smaller memory management than the source example
+Double=8 byte  Float =4 byte
+So in above example the 4 byte (float) will be easilt converted in double (8 byte)
+but when we reverse the roles and convert the double (8 byte) into 4 byte (float) or int (4 byte)
+memory leak will happen
+TO prevent This the second type of type casting or conversion is ther which is 
+EXPLICIT TYPE CONVERSION
+Explicit Type Conversion (Narrowing)
+
+Manual conversion: Requires the programmer to explicitly cast a value from a larger data type to a smaller one.
+Potential data loss: This type of conversion can lead to data loss if the value cannot be accurately represented in the smaller data type.
+
+double x = 10.5;
+int y = (int) x; // Explicit conversion from double to int (data loss may occur)
+
+Autoboxing and Unboxing 
+This is the concept which was introduced in java 
+In java wrapper class was the concept which was introduced to make java pure object oriented
+Wrapper class are basically primitive data type classes like Integer
+Need Of wrapper classes:
+They convert primitive data types into objects. Objects are needed if we wish to modify the arguments passed into a method (because primitive types are passed by value).
+
+Autoboxing is just a same concept like implicit type cating of data
+eg:    char ch = 'a';
+	  // Autoboxing- primitive to Character object
+        // conversion
+        Character a = ch;
+
+Automatically it converts a primitive data into wrapper class object
+
+Unboxing 
+Reverse process of autoboxing.
+IN unboxing we are converting a wrapper class object into the primitive data type.
+
+
+     Character ch = 'a';
+
+        // unboxing - Character object to primitive
+        // conversion
+        char a = ch;
+In this we are explicitly converting a wrapper class object into the primitive data variable
+Still from the above example I'll also explain you
+Integer i=6;
+Integer i1=new Integer(8)
+They both are same but let me tell exaplin you that in first code implicitly an primitive obj
+gets created which is autoboxing
+In second code 	we are explicitly creating an obj of wrapper class Which is an example of Unboxing
+
+								
