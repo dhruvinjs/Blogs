@@ -1,0 +1,134 @@
+Hello coders In this blog I will be explaining about some keyword in java
+
+Final keyword
+The name itself suggests its meaning in Java.
+By using "Final" Keyword we are making the value final or constant 
+IT can be used anywhere means we can use this keyword for decalaring var,class,function
+It can stop method or overriding, Inheritance, value changing of variable
+example of final variable
+Example:
+final int value = 100;
+value=200;
+OUTPUT: Compile time error
+Above snippet will give compile time error because we changing the value of final variable
+
+
+Import keyword
+the import is used to import some built-in libraries like Scanner Class.
+which will help us to take the input from the user 
+It's similar to the #include preprocessor directive used in C++.
+In case we don't use an import statement we have to define the full class name with the object 
+Example
+If we don't use the import statement for a Scanner class
+java.util.Scanner scanner = new java.util.Scanner();
+int input = scanner.nextInt();
+we have to mention the java.util.Scanner everywhere
+
+If we use the import keyword
+import java.util.Scanner;
+
+Scanner sc = new Scanner(System.in);
+System.out.println("Enter a Number");
+int input = sc.nextInt();
+
+Now above code snippet does not need the java.util.Scanner in every line because we have import keyword we can write it one time and use anywhere in whole code
+Don't worry about the Scanner class. I will talk about this in upcoming articles.
+
+
+Break 
+Break is a keyword that helps you exit loops. when your condition is met and dont't want to run the loop anymore
+It can be also used if-else blocks
+for(int i=1;i<=10;i++){  
+        if(i==5){  
+            //breaking the loop  
+            break;  
+        }  }
+        System.out.println(i);  
+The loop will end when the value of I will be 5 and for loop will end when the value will be 5 by using increment
+
+Continue
+Continue is another keyword which is used in java in terms of loops
+In above the break keyword breaks loop when condition is met
+It continues execution, skipping that specific iteration 
+Real world Use case:
+Ecommerce platform 
+Think about yourself handling a list of orders while working on an e-commerce site. Orders that are listed as canceled or refunded should be skipped.
+for countering this problem the continue can be used
+for (int i = 0; i < 10; i++) {
+if (i == 4) {
+continue;
+}
+System.out.println(i);
+}
+output:
+0,1,2,3,5,6,7,8,9
+
+So as per the above concept the i skips the 4 value and prints every other value
+
+String 
+String is a keyword which can used to store sequence of characters 
+Strings are immutable, meaning their value cannot be changed after creation
+So here we will learn about a concept called String pool
+String pool is basically separate memory block where the string literals are stored 
+Only string literals, not String objects, are stored in the string pool.
+2 ways to declare a string:
+Literal : String str = “Nerd”;
+Object : String str2=new String("Nerdy");
+
+String pool is a concept in which if there are 2 literals with same value then 2nd literal will hold the reference 
+String st="Hello";
+String st2="Hello";
+String st3=new String("Hello")
+Now the first st  will get memory allocation and other st2 will hold the reference of st 
+Now this approach will help to save the memory 
+Note this applies to String literal not the Objects of string.
+
+New Keyword
+New is a keyword that is used to create an object(instance) of a class 
+The new keyword allocates memory for an object instance of a class
+A detailed exaplination of how new works and how an object is created is also uploaded 
+Kindly go and check the blog with the Object creation
+
+Example=
+public class MyClass {
+void display() {
+System.out.println("Invoking Method by using the object");
+}
+
+public static void main(String[] args) {
+MyClass obj = new MyClass();
+obj.display();
+}
+}
+
+
+
+Keyword or datatypes
+PRimitives
+Int=Can be used to store number data 
+can't store Decimal value
+Example
+int i=10;
+
+Float
+Can be used to store the deimal number data
+Example:
+float f=10f; //the  f suffix indicates that it is float value
+
+
+Boolean
+Can be used to store the TRUE or FALSE Value
+
+boolean bool = true;
+
+Char 
+Can be used to store the  single character
+char c = 'A';
+Note =compiler will give error if you store multiple error
+char a="abc";
+
+
+
+
+
+
