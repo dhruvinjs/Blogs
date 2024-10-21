@@ -5,9 +5,7 @@ explaining the points with the help of Code examples
 So let's Start
 So for understanding we will first explain what is abstraact methods
 Abstract methods are generally methods which does'nt have any body will just have a method name 
-https://static1.srcdn.com/wordpress/wp-content/uploads/2022/06/God-of-War-Mimir-Head-Sculpture.jpg
-(Note =This can be visual representation of abstract method where you can see only head No body)
-Just used for funny purposes to make you understand
+
 
 Example=
 **Class student{  
